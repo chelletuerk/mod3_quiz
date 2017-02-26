@@ -7,7 +7,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      quizzes: []
+      quizzes: [],
     }
   }
 
@@ -40,7 +40,7 @@ class App extends Component {
         />
         {/* <button onClick={() => this.postSomething()}>Post</button> */}
       </div>
-    );
+    )
   }
 }
 

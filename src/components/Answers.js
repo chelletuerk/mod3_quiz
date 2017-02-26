@@ -22,8 +22,8 @@ class Answers extends React.Component {
         <div key={i} className="answer-choice">
           <h3>
             <input
-              type="radio"
-              name="answer"
+              type='radio'
+              name='answer'
               value={this.state.value}
               onChange={() => this.handleChange(answers.score)}
             />
@@ -34,8 +34,8 @@ class Answers extends React.Component {
     })
   }
   render(e) {
-    return(
-      <div id="answers">
+    return (
+      <div id='answers'>
         {this.loadAnswers(e)}
         <h2>Score: {this.state.score}</h2>
       </div>

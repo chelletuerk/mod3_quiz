@@ -29,4 +29,4 @@ class Questions extends Component {
   }
 }
 
-export default Questions;
+module.exports = Questions

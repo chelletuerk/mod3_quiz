@@ -40,8 +40,8 @@ class Quizzes extends Component {
     })
   }
 
-  renderTotal(submitted) {
-    if (submitted) return <h1>Total {this.state.total}</h1>
+  renderTotal(quizSubmitted) {
+    if (quizSubmitted) return <h1>Total {this.state.total}</h1>
     return <h1>Total 0</h1>
   }
 
@@ -64,4 +64,4 @@ class Quizzes extends Component {
   }
 }
 
-export default Quizzes;
+module.exports = Quizzes
