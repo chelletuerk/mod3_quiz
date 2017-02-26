@@ -9,23 +9,16 @@ class Answers extends React.Component {
     }
   }
 
-  handleChange(score) {
-    const { updateScores, questionId } = this.props
-    this.setState({ score }, () => {
-      updateScores(questionId, score)
-    })
-  }
-
   loadAnswers(e) {
     return this.props.answers.map((answers, i) => {
       return (
-        <div key={i} className="answer-choice">
+        <div key={i}>
           <h3>
             <input
+              key={i}
               type='radio'
               name='answer'
               value={this.state.value}
-              onChange={() => this.handleChange(answers.score)}
             />
             {answers.title}
           </h3>
@@ -37,7 +30,6 @@ class Answers extends React.Component {
     return (
       <div id='answers'>
         {this.loadAnswers(e)}
-        <h2>Score: {this.state.score}</h2>
       </div>
     )
   }

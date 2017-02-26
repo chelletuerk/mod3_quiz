@@ -10,9 +10,7 @@ class Questions extends Component {
           <div key={question.id}>
             <h2>{question.title}</h2>
             <Answers
-              questionId={question.id}
               answers={question.answers}
-              updateScores={this.props.updateScores}
             />
           </div>
         </form>
