@@ -21,13 +21,13 @@ class Answers extends React.Component {
       return (
         <div key={i} className="answer-choice">
           <h3>
-            {answers.title}
             <input
               type="radio"
               name="answer"
               value={this.state.value}
               onChange={() => this.handleChange(answers.score)}
             />
+            {answers.title}
           </h3>
         </div>
       )
